@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:background="#3C000000"
+    tools:context=".Features">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/btnWrite"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:onClick="writeIO"
+                android:text="I/O WRITE" />
+
+            <Button
+                android:id="@+id/btnRead"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:onClick="readIO"
+                android:text="I/O READ" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/btnCam"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:onClick="camera"
+                android:text="CAMERA" />
+
+            <Button
+                android:id="@+id/btnFlash"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:onClick="flash"
+                android:text="FLASH" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/btnInternet"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:onClick="internet"
+                android:text="INTERNET" />
+
+            <Button
+                android:id="@+id/btnVideo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_column="1"
+                android:onClick="video"
+                android:text="VIDEO" />
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

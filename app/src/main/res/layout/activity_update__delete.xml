@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Update_Delete">
+
+    <TextView
+        android:id="@+id/txtview"
+        android:layout_width="38dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="260dp"
+        android:textSize="7pt"
+        android:text="ID : "
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="242dp"
+        android:layout_marginBottom="446dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="242dp" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="381dp"
+        android:ems="10"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="46dp" />
+
+    <EditText
+        android:id="@+id/nim"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="321dp"
+        android:ems="10"
+        android:hint="NIM"
+        android:inputType="phone"
+        android:layout_marginLeft="46dp" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nim"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="-300dp"
+        android:onClick="update"
+        android:text="UPDATE"
+        android:layout_marginLeft="46dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nim"
+        android:layout_toRightOf="@+id/update"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="-300dp"
+        android:onClick="delete"
+        android:text="DELETE"
+        android:layout_marginLeft="46dp" />
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="77dp"
+        android:layout_height="42sp"
+        android:layout_alignTop="@+id/nama"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="-55dp"
+        android:layout_marginEnd="25dp"
+        android:onClick="select"
+        android:text="SELECT"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout>
